@@ -128,6 +128,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSIONS_CLASSES":[
-        "rest_framework.permissions.AllowAny"
+        "rest_framework.permissions.IsAuthenticatedOrReadonly"
     ]
 }
