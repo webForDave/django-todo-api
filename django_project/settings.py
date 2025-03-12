@@ -138,3 +138,5 @@ CORS_ALLOWED_ORIGINS = [
     "https://localhost:8000" # backend port
     "https://localhost:3000" # frontend port
 ]
+
+CSRF_TRUSTED_ORIGINS = ["https://localhost:3000"]
