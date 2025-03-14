@@ -2,10 +2,10 @@ from django.shortcuts import render
 from rest_framework import generics
 from .models import Todo
 from .serializers import TodoSerializer
-from rest_framework.permissions import AllowAny
+from rest_framework import permissions
 
 class ListTodo(generics.ListAPIView):
-    permission_classes = [AllowAny]
+    permission_classes = (permissions.AllowAny)
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
 
